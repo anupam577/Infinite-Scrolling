@@ -7,25 +7,15 @@ import { useNavigate } from "react-router-dom";
 import Header from "../navbar/header";
 import UserInfo from "../userInfo/users";
 const  ContentPage=()=>{
-
+   
   
     return (
         <div>
-
+             
             <Header/>
+            <h2 className='cen'>User Info</h2>
             <UserInfo/>
-           {/* <Categories/>
-          
-           <Posts/>
-         */}
-         
-                
-                    {/* <Categories />
-                    <Grid container>
-                <Grid container item xs={12} sm={10} lg={13}>
-                    <Posts />
-                </Grid>
-            </Grid> */}
+           
            
         </div>
     )

@@ -66,7 +66,7 @@ const Login = () => {
     const navigate = useNavigate();
    
 
-    const imageURL = 'https://www.sesta.it/wp-content/uploads/2021/03/logo-blog-sesta-trasparente.png';
+    const imageURL = 'https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553__340.png';
 
     
 
@@ -90,10 +90,12 @@ const Login = () => {
     return (
         <Component>
             <Box>
+                
                 <Image src={imageURL} alt="blog" />
-                {
+                { 
                     
                         <Wrapper>
+                            <div style={{textAlign :"center"}}><h3>User Info</h3></div>
                             <TextField variant="standard" value={login.username} onChange={(e) => onValueChange(e)} name='username' label='Enter Username' />
                             <TextField variant="standard" value={login.password} onChange={(e) => onValueChange(e)} name='password' label='Enter Password' />
 
@@ -105,6 +107,7 @@ const Login = () => {
                         </Wrapper> 
                       
                 }
+
             </Box>
         </Component>
     )

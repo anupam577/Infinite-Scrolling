@@ -1,6 +1,6 @@
 
 import { AppBar, Toolbar, styled, Button ,Avatar} from '@mui/material'; 
-
+import "./nav.css"
 import { Link } from 'react-router-dom';
 //  import About from '../about/about';
 import { useNavigate } from 'react-router-dom';
@@ -36,13 +36,15 @@ const Header = () => {
         
     }
     return (
+       
         
-
+      
         <Component>
+             
             <Container>
               
-                
-              
+         
+           
                 <Link to='/' onClick={logout} >LOGOUT </Link>
                 
                

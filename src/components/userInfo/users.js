@@ -14,7 +14,7 @@ const UserInfo = (props) => {
 
 
     const getCategory = async () => {
-        const url = `https://randomuser.me/api/?page=${page}&results=5&seed=abc`;
+        const url = `https://randomuser.me/api/?page=${page}&results=4&`;
         let data = await fetch(url);
         let parsedData = await data.json()
         setuserInfo(parsedData.results);
@@ -26,7 +26,7 @@ const UserInfo = (props) => {
 
     const fetchMoreData = async () => {
 
-        const url = `https://randomuser.me/api/?page=${page}&results=5&seed=abc`;
+        const url = `https://randomuser.me/api/?page=${page}&results=4&`;
         setPage(page + 1);
         let data = await fetch(url);
         let parsedData = await data.json()
@@ -42,7 +42,7 @@ const UserInfo = (props) => {
 
 
 
-            <h1 style={{ textAlign: 'center' }}>User  Info</h1>
+         
 
 
 
