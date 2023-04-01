@@ -33,7 +33,7 @@ const UserInfo = (props) => {
         console.log(parsedData);
         setuserInfo(UserInfo1.concat(parsedData.results))
     };
-    return (
+    return 
 
 
 
